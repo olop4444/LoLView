@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoLView</string>
+    <string name="welcome">Welcome to LoLView!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_match">MatchActivity</string>
+    <string name="summoner_prompt">Enter summoner name:</string>
+    <string name="submit_button">Search</string>
+
+    <string-array name="regions">
+        <item>NA</item>
+        <item>BR</item>
+        <item>EUNE</item>
+        <item>EUW</item>
+        <item>KR</item>
+        <item>LAN</item>
+        <item>LAS</item>
+        <item>OCE</item>
+        <item>RU</item>
+        <item>TR</item>
+    </string-array>
+
+    <string name="action_exit">Exit</string>
+    <string name="main_activity_label">LoLView</string>
+    <string name="history_button">Show/Hide History</string>
+    <string name="stream_button">View Streams</string>
+    <string name="title_activity_stream">StreamView</string>
+    <string name="title_activity_video">VideoActivity</string>
+
+</resources>
