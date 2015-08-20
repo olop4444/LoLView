@@ -84,7 +84,7 @@ public class VideoActivity extends Activity {
 		protected Uri doInBackground(Void... params) {	
 			String[] st = getSigAndToken();
 			String uri = getVideo(st);
-			return(Uri.parse(uri.trim()));
+			return(Uri.parse(uri));
 		}
 		
 		/**
@@ -122,7 +122,8 @@ public class VideoActivity extends Activity {
 				String request = "http://usher.twitch.tv/api/channel/hls/"+channel+".m3u8?player=twitchweb&&token="+token+"&sig="+sig+"&allow_source=true&type=any&p="+random;			
 				String error = "Video not found.";
 				String response = HttpHelp.httpRequest(request, error);
-				response = response.substring(response.trim().lastIndexOf("\n"));
+				Log.d("uri",response);
+				response = response.substring(response.trim().lastIndexOf("\n")).trim();
 				return response;
 			} catch (UnsupportedEncodingException e) {
 				return e.getLocalizedMessage();
