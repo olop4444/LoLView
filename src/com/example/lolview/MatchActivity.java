@@ -33,7 +33,7 @@ import android.widget.TextView;
 
 public class MatchActivity extends ActionBarActivity {
 	private final static String api_key = "5ebf9d89-fc7f-416a-9915-ac571eb0809f";
-	private final static String ddragon_version = "5.2.1";
+	private final static String ddragon_version = "5.16.1";
 	private final static String staticData_version = "1.2";
 	private final static String summoner_version = "1.4";
 	private final static String game_version = "1.3";
@@ -242,7 +242,8 @@ public class MatchActivity extends ActionBarActivity {
 	 * @return The url of the item icon.
 	 */
 	public String getItemIcon(int id) {
-		if(id != 0 && id != 3285)
+		//don't remember if necessary
+		if(id != 0)
 			return "http://ddragon.leagueoflegends.com/cdn/"+ddragon_version+"/img/item/"+id+".png";
 		return null;
 	}
